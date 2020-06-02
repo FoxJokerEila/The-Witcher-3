@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+.c-wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.contentchar{
+	position:absolute;
+	width: 570px;
+	height: 570px;
+	left: 50%;
+	margin-left: -285px;
+	top: 12%;
+	overflow: hidden;
+	z-index: 999;
+}
+
+.contentchar ul{
+	position: absolute;
+	width: 6000px;
+	height: 570px;
+	left: -570px;
+}
+
+.contentchar ul li{
+	width: 570px;
+	height: 570px;
+	text-align: center;
+	background-color: #000;
+}
+
+.contentchar img{
+	height: 100%;
+}
+
+div.left-btn{
+	display: block;
+	position: absolute;
+	top: 45%;
+	margin-top: 1%;
+	margin-left: 3%;
+	width: 45px;
+	height: 45px;
+	border-left: 3px solid #fff;
+	border-top: 3px solid #fff;
+	transform: rotate(-45deg);
+}
+
+div.right-btn{
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 45%;
+	margin-top: 1%;
+	margin-right: 3%;
+	width: 45px;
+	height: 45px;
+	border-right: 3px solid #fff;
+	border-top: 3px solid #fff;
+	transform: rotate(45deg);
+}
+
+div.right-btn:hover{
+	border-color: red;
+	cursor: pointer;
+}
+
+div.left-btn:hover{
+	border-color: red;
+	cursor: pointer;
+}
+
+.txtback{
+	background-color: #2f5e64;
+	width: 96%;
+	height: 79%;
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	margin-left: -48%;
+	opacity: 0.8;
+}
+
+.txt{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	top: 12%;
+	/*background-color: #000;*/
+}
+
+.txt li p{
+	color: #000;
+	font-size: 1.3rem;
+	border: 1px solid #a29c8d;
+	padding: 5px 5px;
+}
+
+.txt li:nth-child(1){
+	width: 400px;
+	height: 210px;
+	overflow: hidden;
+	margin-left: 3%;
+	margin-top: 40px;
+	position: absolute;
+}
+
+.txt li:nth-child(2){
+	width: 400px;
+	height: 150px;
+	overflow: hidden;
+	margin-top: 240px;
+	margin-left: 3%;
+	position: absolute;
+}
+
+.txt li:nth-child(3){
+	width: 400px;
+	height: 180px;
+	overflow: hidden;
+	margin-top: 400px;
+	margin-left: 3%;
+	position: absolute;
+}
+
+.txt li:nth-child(4){
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	margin-top: 40px;
+	right: 3%;
+	position: absolute;
+}
+
+.txt li:nth-child(5){
+	width: 400px;
+	height: 200px;
+	overflow: hidden;
+	margin-top: 205px;
+	right: 3%;
+	position: absolute;
+}
+
+.txt li:nth-child(6){
+	width: 400px;
+	height: 200px;
+	margin-top: 310px;
+	overflow: hidden;
+	right: 3%;
+	position: absolute;
+}
+
+.txt li:nth-child(7){
+	width: 400px;
+	height: 200px;
+	margin-top: 430px;
+	overflow: hidden;
+	right: 3%;
+	position: absolute;
+}
+
+.list span{
+	display: block;
+	color: #fff;
+	font-size: 3.5rem;
+	width: 4rem;
+	height: 15rem;
+	position: absolute;
+	margin-left:100px;
+	margin-top: 50px; 
+}
+
+.list span:first{
+	margin-left:100px;
+	margin-top: 50px; 
+}
+
+.list span.triss{
+	margin-left:150px;
+	margin-top: 50px; 
+}
+
+.list span.king{
+	margin-left:150px;
+	margin-top: 50px; 
+}
+
+.txt span{
+	font-size: 25px;
+	color: #a29c8d;
+}
+
+.txt{
+	max-width: 100%;
+}

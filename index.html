@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Witcher 3</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<style>
+		#menu { margin: 0; padding: 0; position: absolute; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+		#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+		#menu a { float: left; padding: 10px 20px; background-color: #fff; color: #333; text-decoration: none;}
+		#menu .active a { color: #fff; background-color: #333;}
+		.section { /*text-align: center;*/ font: 5rem "Microsoft Yahei"; color: #fff;}
+	</style>
+	<!-- <script type="text/javascript" src="js/rem响应式布局.js"></script> -->
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/characters.css">
+	<link rel="stylesheet" href="css/fightsys.css">
+	<link rel="stylesheet" href="css/audios.css">
+	<link rel="stylesheet" href="css/videos.css">
+	<link rel="stylesheet" href="css/storyback.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/bounsein.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/盒子自适应.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/放大镜.js"></script>
+	<script type="text/javascript" src="js/character轮播图.js"></script>
+	<script type="text/javascript" src="js/播放器.js"></script>
+	<script type="text/javascript" src="js/播放器v.js"></script>
+	<!-- <script type="text/javascript" src="js/首页视频大小自适应.js"></script> -->
+	<script>
+		$(function(){
+    	$('#dowebok').fullpage({
+    		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],//定义锚链接
+    		menu: '#menu',//确定使用菜单
+    		resize:true,//字体大小随窗口变化
+    		loopBottom:true,
+    		loopTop:true,
+    	});
+		});
+	</script>
+	<style>
+		#menu{
+			margin-top: 0;
+			padding-top: 0;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class="container">
+		<ul id="menu">
+			<li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+			<li data-menuanchor="page2"><a href="#page2">人物介绍</a></li>
+			<li data-menuanchor="page3"><a href="#page3">故事背景</a></li>
+			<li data-menuanchor="page4"><a href="#page4">战斗系统</a></li>
+			<li data-menuanchor="page5"><a href="#page5">宣传片</a></li>
+			<li data-menuanchor="page6"><a href="#page6">原声带</a></li>
+		</ul>	
+	</div>
+	<!-- 几个分屏 -->
+	<div id="dowebok">
+		<!-- 首页 -->
+	    <div class="section">
+	    	<!-- 边线 -->
+	    	<div class="overlay">
+	    		<div class="cnw"></div>
+	    		<div class="cn1"></div>
+	    		<div class="cn2"></div>
+	    		<div class="cne"></div>
+	    		<div class="cw"></div>
+	    		<div class="ce"></div>
+	    		<div class="csw"></div>
+	    		<div class="cs1"></div>
+	    		<div class="cs2"></div>
+	    		<div class="cse"></div>
+	    	</div>
+	    	<div class="suprise">
+				<video autoplay muted>
+					<source src="videos/suprise.mp4" type="video/mp4">
+				</video>
+			</div>
+	    </div>
+		<!-- 人物介绍 -->
+	    <div class="section">
+	    	<!-- 边线 -->
+	    	<div class="overlay" id="o2">
+	    		<div class="cnw"></div>
+	    		<div class="cn1"></div>
+	    		<div class="cn2"></div>
+	    		<div class="cne"></div>
+	    		<!-- <div class="cw"></div> -->
+	    		<!-- <div class="ce"></div> -->
+	    		<div class="csw"></div>
+	    		<!-- <div class="cs1"></div> -->
+	    		<!-- <div class="cs2"></div> -->
+	    		<div class="cse"></div>
+	    	</div>
+	        <div id="wrapper" class="wall2">
+				<div class="c-wrapper">
+					<div class="contentchar">
+						<ul class="clearfix list">
+							<li class="fl">
+								<a href="javascript:;">
+									<span class="fl king">恩希尔</span>
+									<img src="images/the_witcher_3_artworks/characters/Witcher 3 Wild Hunt, The - Emhyr_var_Emreis.jpg" alt="">
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;">
+									<span class="fl">杰洛特</span>
+									<img src="images/the_witcher_3_artworks/characters/Witcher 3 Wild Hunt, The - artwork - Geralt_Fiend.jpg" alt="">
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;">
+									<span class="fl">希里</span>
+									<img src="images/the_witcher_3_artworks/characters/Witcher 3 Wild Hunt, The - artwork - Ciri.jpg" alt="">
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;">
+									<span class="fl">叶奈法</span>
+									<img src="images/the_witcher_3_artworks/characters/Witcher 3 Wild Hunt, The - artwork - Yennefer.jpg" alt="">
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;">
+									<span class="fl triss">特莉丝</span>
+									<img src="images/the_witcher_3_artworks/characters/Witcher 3 Wild Hunt, The - artwork - Triss.jpg" alt="">
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;">
+									<span class="fl">维瑟米尔</span>
+									<img src="images/the_witcher_3_artworks/characters/Witcher 3 Wild Hunt, The - artwork - Vasemir.jpg" alt="">
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;">
+									<span class="fl">丹德里恩</span>
+									<img src="images/the_witcher_3_artworks/characters/Witcher 3 Wild Hunt, The - artwork - Dandelion.jpg" alt="">
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;">
+									<span class="fl king">恩希尔</span>
+									<img src="images/the_witcher_3_artworks/characters/Witcher 3 Wild Hunt, The - Emhyr_var_Emreis.jpg" alt="">
+								</a>
+							</li>
+							<li class="fl">
+								<a href="javascript:;">
+									<span class="fl">杰洛特</span>
+									<img src="images/the_witcher_3_artworks/characters/Witcher 3 Wild Hunt, The - artwork - Geralt_Fiend.jpg" alt="">
+								</a>
+							</li>
+						</ul>
+
+						<div class="left-btn fl"></div>
+						<div class="right-btn fr"></div>
+					</div>
+					<div class="txtback">
+						
+					</div>
+					<ul class="txt">
+							<li class="fl">
+								<p>游戏主人公，利维亚的<span>杰洛特</span>是一名猎魔人，在上古语中，他被称为“格温布雷德”，意为“白狼”。他身手敏捷，但同时又深不可测。在他冷漠寡言的外表下，隐藏着如海洋一般辽阔的善良和幽默感。
+								像所有猎魔人一样，杰洛特是职业怪物猎手。他拥有超乎常人的力量和速度，杰洛特在猎魔人的青草试炼中展示出不寻常的忍受能力并存活了下来，从而获得了这些能力。</p>
+							</li>
+							<li class="fl">
+								<p><span>希里</span>全名希里雅·欧菲娜·伊伦·雷安伦，她是一位技艺精湛的猎魔人，好几个皇位的继承人，上古之血的最后传承者，无与伦比的魔法之源。
+								她是杰洛特通过意外律获得的养女，同时也是他的天命，他的意外之女，他们两人被命运的枷锁紧紧羁绊在一起。</p>
+							</li>
+							<li class="fl">
+								<p><span>叶奈法</span>是一位来自亚甸首都温格堡的女术士，她是术士评议会以及其后的女术士集会所成员。她是杰洛特的挚爱，也担当了希瑞养母的角色。
+								叶奈法与杰洛特的感情始于一场关于迪精的冒险，随着这场冒险，他们二人的命运纠缠在了一起。他们的感情经历了许多风暴，他们仍然互相吸引彼此。</p>
+							</li>
+							<li class="fl">
+								<p><span>特莉丝·梅莉葛德</span>曾经是弗尔泰斯特国王的前任宫廷顾问，索登山之战的著名英雄、人称山顶第十四人。她拥有聪慧的头脑、温暖的微笑，以及无与伦比的个人魅力。
+								特莉丝是叶奈法和杰洛特的好友，与后者还有一段坎坷的恋情。特莉丝和希瑞的关系也非常亲近。她在女术士中的影响力跟她对魔法的天份一样，都相当令人瞩目。</p>
+							</li>
+							<li class="fl">
+								<p><span>维瑟米尔</span>是全大陆资格最老、最有经验的狩魔猎人，最后的狼学派大师。在故事中维瑟米尔加入了杰洛特的行列，与他一同跨越战争肆虐的泰莫利亚，寻找叶妮法的踪迹。</p>
+							</li>
+							<li class="fl">
+								<p><span>丹德里恩</span>是著名的吟游诗人、作曲家、歌唱家和作家，也是杰洛特最好的朋友之一。在游戏中，丹德里恩在诺维格瑞城定居，还拥有一家旅馆，并帮助希里寻找修复某种物品的办法。</p>
+							</li>
+							<li class="fl">
+								<p><span>恩希尔·恩瑞斯</span>,“敌人坟头上舞动的白色火焰”，尼弗迦德帝国皇帝，希里的生父。是他策划了对北方王国国王的刺杀，并借此机会发起了第三次北境战争。在他意图统一南北领地的同时，也开始寻找女儿希里以期继承他的皇位。</p>
+							</li>
+						</ul>
+				</div>
+				<div class="footer">
+				</div>
+			</div>
+		</div>
+		<!-- 故事背景 -->
+	    <div class="section">
+	    	<!-- 边线 -->
+	    	<div class="overlay" id="o3">
+	    		<div class="cnw"></div>
+	    		<div class="cn1"></div>
+	    		<div class="cn2"></div>
+	    		<div class="cne"></div>
+	    		<div class="cw"></div>
+	    		<div class="ce"></div>
+	    		<div class="csw"></div>
+	    		<div class="cs1"></div>
+	    		<div class="cs2"></div>
+	    		<div class="cse"></div>
+	    	</div>
+	        <div id="wrapper" class="wall3">
+				<div class="contentstory">
+					<!-- 预览 -->
+					<div class="preview">
+						<div class="img">
+							<img src="images/map/图片.png"alt="">
+							<!-- 面纱 -->
+							<div class="mask"></div>
+						</div>
+					</div>
+					<!-- 放大镜盒子 -->
+					<div class="bigBox">
+						<img src="images/map/图片.png" alt="" class="bigImg">
+					</div>
+					<!-- 文字内容 -->
+					<div class="con fr">
+							<p class="country1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>瑞达尼亚</span>&nbsp;&nbsp;是北方王国中较为富庶的王国，现任国王是拉多维德五世。在游戏中双方为了夺取诺维格瑞区域，在泰莫利亚北部的威伦地区进行了激烈的交锋。</p>
+							<p class="country2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>尼弗迦德</span>&nbsp;&nbsp;帝国是已知世界和历史上中最强大的帝国，帝国地处大陆的南方，现任皇帝恩希尔·恩瑞斯。在游戏《巫师2》中，该帝国利用刺客暗杀了多个北方王国国王，导致北境局势混乱，并介此发动了第三次北境战争。</p>
+							<p class="country3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>史凯利格</span>&nbsp;&nbsp;群岛，地处大陆的西方，由六个大岛屿和十几个零星分布的小岛屿组成。由国王克拉茨·安·克莱特领导，各个家族领袖在各自领地上拥有很大的自治权。他们经常对尼弗迦德帝国的沿岸地区展开劫掠行动，并主张抗争尼弗迦德帝国的入侵。</p>
+						</div>
+						<!-- 背景色 半透明效果 -->
+						<div class="backwall fr">
+						
+						</div>
+				</div>
+			</div>
+	    </div>
+	    <!-- 战斗系统 带分屏 -->
+	    <div class="section">
+	    	<!-- 边线 -->
+	    	<div class="overlay" id="o4">
+	    		<div class="cnw"></div>
+	    		<div class="cn1"></div>
+	    		<div class="cn2"></div>
+	    		<div class="cne"></div>
+	    		<div class="cw"></div>
+	    		<div class="ce"></div>
+	    		<div class="csw"></div>
+	    		<!-- <div class="cs1"></div> -->
+	    		<!-- <div class="cs2"></div> -->
+	    		<div class="cse"></div>
+	    	</div>
+	    	<!-- 第一分屏 -->
+	    	<div class="slide">
+	    		<div id="wrapper" class="wall4">
+	    			<img src="images/Fightsys/fightsys4.png" class="mainimg" alt="">
+	    		</div>
+	   		</div>
+	   		<!-- 第二分屏 -->
+        	<div class="slide">
+        		<div class="fightcon">
+					<img src="images/Fightsys/con1.png" alt="" class="con1">
+					<img src="images/Fightsys/con2.png" alt="" class="con2">
+				</div>
+			</div>
+	    </div>
+	    <!-- 宣传片 -->
+	    <div class="section">
+	    	<!-- 边线 -->
+	    	<div class="overlay" id="o5">
+	    		<div class="cnw"></div>
+	    		<div class="cn1"></div>
+	    		<div class="cn2"></div>
+	    		<div class="cne"></div>
+	    		<div class="cw"></div>
+	    		<div class="ce"></div>
+	    		<div class="csw"></div>
+	    		<!-- <div class="cs1"></div> -->
+	    		<!-- <div class="cs2"></div> -->
+	    		<div class="cse"></div>
+	    	</div>
+	    	<div id="wrapper" class="wall5">
+				<div class="contentvideo">
+					<div class="tv">
+						<video id="play" controls="controls" src="videos/the_witcher_3_videos/Killing Monsters/The Witcher 3 Wild Hunt - Killing Monsters 2015.mp4"></video>
+					</div>
+					
+					<ul class="fr">
+						<li><a href="javascript:;" alt="videos/the_witcher_3_videos/Killing Monsters/The Witcher 3 Wild Hunt - Killing Monsters 2015.mp4"><img src='images/videosimg/The_Witcher_3_Wild_Hunt-Killing_monsters_EN_1920x1080.png' ><br>
+							<span>Killing Monsters 2015</span></a></li>
+						<li><a href="javascript:;" alt="videos/the_witcher_3_videos/A Night To Remember/A Night To Remember.mp4"><img src="images/videosimg/The_Witcher_3_Wild_Hunt-A-Night-To-Remember_EN_1920x1080.png" alt=""><br><span>A Night To Remember</span></a></li>
+						<li><a href="javascript:;" alt="videos/the_witcher_3_videos/Debut Gameplay Trailer/Witcher 3 Wild Hunt, The - Debut Gameplay Trailer.mp4"><img src="images/videosimg/The_Witcher_3_Wild_Hunt-Debut_Gameplay_Trailer_EN_1920x1080.png" alt=""><span>Debut Gameplay Trailer</span></a></li>
+					</ul>
+				</div>
+			</div>
+	    </div>
+	    <!-- 原声带 -->
+	    <div class="section">
+	    	<!-- 边线 -->
+	    	<div class="overlay" id="o6">
+	    		<div class="cnw"></div>
+	    		<div class="cn1"></div>
+	    		<div class="cn2"></div>
+	    		<div class="cne"></div>
+	    		<div class="cw"></div>
+	    		<div class="ce"></div>
+	    		<div class="csw"></div>
+	    		<div class="cs1"></div>
+	    		<div class="cs2"></div>
+	    		<div class="cse"></div>
+	    	</div>
+	    	<div id="wrapper" class="wall6">
+	    		<div class="contentaudio">
+					<audio src="audios/mp3/01 The Trail.mp3" id="playa" controls="controls"></audio>
+					<ul class="fl">
+						<li><a href="javascript:;" alt="audios/mp3/01 The Trail.mp3" class="first">The Trail</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/02 Geralt of Rivia.mp3">Geralt of Rivia</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/03 Eredin, King of the Hunt.mp3">Eredin, King of the Hunt</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/04 Wake Up, Ciri.mp3">Wake Up, Ciri</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/05 Aen Seidhe.mp3">Aen Seidhe</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/06 Commanding the Fury.mp3">Commanding the Fury</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/07 Emhyr var Emreis.mp3">Emhyr var Emreis</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/08 Spikeroog.mp3">Spikeroog</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/09 King Bran's Final Voyage.mp3">King Bran's Final Voyage</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/10 Silver for Monsters....mp3">Silver for Monsters...</a></li>						
+					</ul>
+					<ul class="fr">
+						<li><a href="javascript:;" alt="audios/mp3/11 Whispers of Oxenfurt.mp3">Whispers of Oxenfurt</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/12 The Nightingale.mp3">The Nightingale</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/13 City of Intrigues.mp3">City of Intrigues</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/14 The Hunter's Path.mp3">The Hunter's Path</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/15 Widow-maker.mp3">Widow-maker</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/16 Kaer Morhen.mp3">Kaer Morhen</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/17 Eyes of the Wolf.mp3">Eyes of the Wolf</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/18 Witch Hunters.mp3">Witch Hunters</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/19 ...Steel for Humans.mp3">...Steel for Humans</a></li>
+						<li><a href="javascript:;" alt="audios/mp3/20 Fate Calls.mp3">Fate Calls</a></li>
+					</ul>
+					<div class="ulback1"></div>
+					<div class="ulback2"></div>
+	    	</div>
+		</div>
+	    </div>
+	</div>
+</body>
+</html>

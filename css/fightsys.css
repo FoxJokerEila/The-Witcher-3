@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.mainimg{
+	position: absolute;
+	height: 90%;
+	max-height: 1079px;
+	margin:auto;
+	left: 0;
+	right: 0;
+	top: 6%;
+	bottom: 0;
+}
+.fightcon{
+	position: absolute;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background: url('../images/wallpapers/Witcher 3 Wild Hunt, The -  wallpaper 4.jpg') no-repeat;
+	overflow-x: hidden;
+	background-size: 100%;
+}
+.fightcon .con1,.fightcon .con2{
+	position: absolute;
+	max-height: 1080px;
+	height: 90%;
+	top: 8%;
+}
+
+.fightcon .con1{
+	left: 10%;
+}
+
+.fightcon .con2{
+	right: 10%;
+}

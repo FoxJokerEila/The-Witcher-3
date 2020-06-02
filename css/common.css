@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+body,ul,ol,li,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,form,input{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	position: relative;
+	font-size: 12px;
+	font-size: 1.2rem;
+	background-color: #fff;
+}
+
+*, ::after, ::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    outline: 0;
+}
+
+p{
+	font-size: 14px;
+	font-size: 1.4rem;
+}
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	/*color: .fff;*/
+}
+
+a:hover{
+	text-decoration: none;
+	/*color: .fff;*/
+}
+
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC"."WenQuanYi Micro Hei",sans-serif;
+}
+
+#wrapper{
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	min-height: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.fl{
+	float: left;
+}
+
+.fr{
+	float: right;
+}
+
+.m-w{
+	width: 1200px;
+	margin: auto;
+}
+
+.clearfix::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+img{
+	vertical-align: middle;
+
+}
+/*img { width: auto; max-width: 100%; }*/
+
+.container{
+	position: absolute;
+	max-width: 40%;
+	/*后面会有对宽度的修改，这里限制一下*/
+	height: 6%;
+	right: 29%;
+	z-index: 20;
+	margin: auto;
+	padding-top: 0;
+    /*background-color: #000;*/
+}
+
+body .section .wall1{
+	background: url('../images/wallpapers/Witcher 3 Wild Hunt, The -  wallpaper 4.jpg') no-repeat;
+	overflow-x: hidden;
+	background-size: 100%;
+}
+
+body .section .wall2{
+	background: url('../images/walls/Witcher-3-Wild-Hunt,-The---Shipyard0.jpg') no-repeat;
+	overflow-x: hidden;
+	background-size: 100%;
+}
+
+body .section .wall3{
+	background: url('../images/walls/Witcher-3-Wild-Hunt,-The---City_20.jpg') no-repeat;
+	overflow-x: hidden;
+	background-size: 100%;
+}
+
+body .section .wall4{
+	background: url('../images/walls/Witcher-3-Wild-Hunt,-The---Village20.jpg') no-repeat;
+	overflow-x: hidden;
+	background-size: 100%;
+}
+
+body .section .wall5{
+	background: url('../images/walls/Witcher-3-Wild-Hunt,-The---Ruins0.jpg') no-repeat;
+	overflow-x: hidden;
+	background-size: 100%;
+}
+
+body .section .wall6{
+	background: url('../images/walls/Witcher-3-Wild-Hunt,-The---Garden0.jpg') no-repeat;
+	overflow-x: hidden;
+	background-size: 100%;
+}
+
+.suprise{
+	position: relative;
+	height: 100%;
+	background-color: #000;
+}
+.suprise video{
+	position: absolute;
+	height: 100%;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+.overlay {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 4;
+}
+
+.overlay .cnw::after,.overlay .cne::after,.overlay .cse::after,.overlay .csw::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.overlay .cnw::after{
+	background-image: url(../images/skills/corner-top-left.7.png);
+	opacity: 1;
+	visibility: visible;
+}
+
+.overlay .cne::after {
+    background-image: url(../images/skills/corner-top-right.7.png);
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay .csw::after {
+    background-image: url(../images/skills/corner-bottom-left.7.png);
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay .cse::after {
+    background-image: url(../images/skills/corner-bottom-right.7.png);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*.overlay .cnw::before {
+    opacity: 0;
+}
+*/
+.overlay .cnw::before{
+    content: '';
+    background-image: url(../images/sprite0.png);
+    background-position: 0 -714px;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay .cne::before {
+    content: '';
+    background-image: url(../images/sprite0.png);
+    background-position: 0 -658px;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay .csw::before {
+    content: '';
+    background-image: url(..images/sprite0.png);
+    background-position: 0 -826px;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay .cse::before {
+    content: '';
+    background-image: url(..images/sprite0.png);
+    background-position: 0 -770px;
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay .cnw,.overlay .cne,.overlay .csw,.overlay .cse {
+    background-image: none;
+}
+.overlay .cnw{
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+}
+.overlay .cne{
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 13px;
+    right: 13px;
+}
+
+.overlay .csw{
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
+}
+
+.overlay .cse{
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+}
+
+.overlay .ce, .overlay .cn1, .overlay .cn1_1, .overlay.gold .cn1_2, .overlay .cn2, .overlay .cs1, .overlay .cs2, .overlay .cw {
+    background-color: .b19042;
+    opacity: .35;
+}
+.overlay .cn1, .overlay .cn2 {
+    visibility: visible;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.overlay .cn1 {
+    margin-right: 0;
+}
+.overlay .cn2 {
+    margin-left: 0;
+}
+.overlay .ce, .overlay .cn1, .overlay .cn2, .overlay .cs1, .overlay .cs2, .overlay .cw {
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.overlay .cn1 {
+    position: absolute;
+    height: 1px;
+    background-color: rgba(142,142,142,.5);
+    top: 40px;
+    left: 70px;
+    right: 50%;
+    margin-right: 100px;
+}
+.overlay .cn2 {
+    position: absolute;
+    height: 1px;
+    background-color: rgba(142,142,142,.5);
+    top: 40px;
+    right: 70px;
+    left: 50%;
+    margin-left: 100px;
+}
+.overlay .cw {
+    position: absolute;
+    width: 1px;
+    background-color: rgba(142,142,142,.5);
+    left: 40px;
+    top: 70px;
+    bottom: 70px;
+}
+.overlay .ce {
+    position: absolute;
+    width: 1px;
+    background-color: rgba(142,142,142,.5);
+    right: 40px;
+    top: 70px;
+    bottom: 70px;
+}
+.overlay .cs1 {
+    position: absolute;
+    height: 1px;
+    background-color: rgba(142,142,142,.5);
+    bottom: 40px;
+    left: 70px;
+    right: 50%;
+    margin-right: 0px;
+}
+.overlay .cs2 {
+    position: absolute;
+    height: 1px;
+    background-color: rgba(142,142,142,.5);
+    bottom: 40px;
+    right: 70px;
+    left: 50%;
+    margin-left: 0px;
+}
+#o2{
+	top: 100%;
+}
+#o3{
+	top: 200%;
+}
+#o4{
+	top: 300%;
+}
+#o5{
+	top: 400%;
+}
+#o6{
+	top: 500%;
+}

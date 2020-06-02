@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.content>div.left-btn{
+	left: 0;
+}
+
+.content>div.right-btn{
+	right: 0;
+}
+
+.content>div i{
+	display: block;
+	width: 11px;
+	height: 16px;
+	margin: 0 auto;
+	margin-top: 27.5px;
+	background: url('../images/icon-common.png') no-repeat -101px -1px;
+}
+
+.content>div a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.content>div.right-btn i{
+	background-position: -112px -1px;: 
+}
